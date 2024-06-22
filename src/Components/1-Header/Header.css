@@ -1,0 +1,147 @@
+header{
+    padding: 0 2.4rem;
+    margin: 1rem 0;
+} 
+header nav{
+    background-color: var(--hover);
+    border-radius: 55px;
+    padding: 0.77rem 1.6rem !important;
+    box-shadow: 1px 1px 2px #2323242a;
+}
+header ul.nav_list{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding-left: 0;
+    margin-bottom: 0 !important;
+
+}
+
+.nav_list li a{
+    text-decoration: none;
+    color: var(--white);
+    opacity: .9;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all .7s;
+
+}
+header ul li a:hover{
+    color: var(--black);
+    opacity: 1;
+    transition: all .7s;
+
+ } 
+header .menu{
+    display: none !important;
+}
+.nav_smal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(40, 40, 48, 0.582);
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+@keyframes menu{
+    0% {scale: .2;}
+    60% {scale: 1.2;}
+    100%{scale: 1;}
+}
+.light_mood{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px !important;
+    height: 35px !important;
+    border: 1px solid var(--hover) ;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    font-weight: 500;
+    font-size: 1.3rem ;
+    background-color: var(--secondary);
+      /* Better Font Rendering =========== */
+ 
+}
+.model{
+    animation: menu .7s 1;
+    border-radius: .7rem ;
+    background-color: var(--secondary);
+
+}
+.model a{
+    color: #fff ;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+.model li{
+    border-bottom: 1px solid var(--border);
+    padding-left: .3rem;
+}
+.model li:last-child{
+    border: none ;
+}
+.model li:first-child{
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+}
+.model li a{
+    color: var(--title);
+
+}
+.model button:hover{
+    transition:rotateY(180deg) ;
+    transition: all .7s;
+}
+ header .icon-moon-o,header .icon-menu {
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--subtitle);
+    border: 1px solid rgb(244,165,96,0.249);
+    transition: all .5s;
+
+}
+header .icon-moon-o:hover,header .icon-menu:hover ,header .light_mood{
+    color: var(--title);
+    border: 1px solid rgb(244,165,96);
+    transition: all .7s;
+    rotate: 360deg;
+
+
+}
+header .icon-close{
+    font-size: 1.2rem;
+    color: var(--subtitle);
+    transition: all .5s;
+
+}
+header .icon-close:hover{
+    font-size: 1.4rem;
+    color: crimson;
+    rotate: 180deg;
+}
+
+
+
+
+
+@media(max-width:700px) {
+    header{
+        padding: 0 ;
+    } 
+    header nav{
+        display: none !important;
+    }
+    header .menu{
+        display: block !important;
+    }
+    
+    
+}

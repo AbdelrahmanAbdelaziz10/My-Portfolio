@@ -1,0 +1,116 @@
+.about h2{
+    color: var(--title);
+    font-weight: 500;
+    font-size: 2.7rem;
+    position: relative;
+}
+.about h2::after{
+    content: '';
+    position: absolute;
+    margin: -2% 0;
+    height: 3px;
+    width: 23%;
+    bottom: 0;
+    left: 33%;
+    background-color: var(--hover);
+
+}
+
+.about_photo{
+    overflow: hidden;
+    width: 20vw;
+    height: 40vh;
+    margin-left: 20%;
+    border-radius: 3px;
+}
+.about_photo:hover{
+    border: 3px solid var(--hover);
+    transition: all .2s;
+}
+.about_photo img{
+    width: 100%;
+}
+.about_text h3{
+    font-size: 2.4rem;
+    color: var(--title);
+}
+.about_text p{
+    letter-spacing: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--subtitle);
+}
+    .light .btn2{
+        background-color: rgba(36, 37, 46, 1);
+        color: #fff;
+    }
+    .btn2{
+        border-radius: 50px !important;
+        color: var(--title);
+        background-color: #ff7a57;
+        font-size: 1.1rem;
+        font-weight: 600;
+        min-width: 120px;
+        padding: 0.65rem 0.9rem;
+        border: 1px solid transparent;
+        margin-top: .5rem;
+        line-height: 1.5;
+        transition: all .5s;
+    }
+    .btn2 a{
+        text-decoration: none;
+        color: var(--white) ;
+    }
+    .btn2 .down_icon{
+        font-size: 1.5rem;
+        margin-left: .5rem;
+        transition: all .5s;
+    
+    }
+    .btn2:hover {
+        background-color: #ee5630;
+    }
+    .btn2:hover .down_icon{
+        background-color: #ee5630;
+        margin-left: 2rem;
+        rotate: 360deg;
+        font-size: 1.8rem;
+    }
+
+
+
+    @media only screen and (min-width:767px) and (max-width:1023) {
+        .about_text h3{
+            font-size: 1.8rem !important;
+        }
+    }
+
+
+    @media only screen and (max-width: 767px) {
+        
+        .about h2::after{
+            content: '';
+            position: absolute;
+            margin: -2% 0;
+            height: 3px;
+            width: 33%;
+            bottom: 0;
+            left: 23%;
+        
+        }        
+.about_photo{
+    display: flex;
+    width: 80vw;
+    height: 40vh;
+    margin-left: 6%;
+    justify-content: center;
+    align-items: center;
+}
+.about_text h3{
+    font-size: 2rem;
+    text-align: center;
+}
+.about_text h5{
+    text-align: center;
+}
+    }
