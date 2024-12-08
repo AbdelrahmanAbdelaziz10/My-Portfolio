@@ -1,0 +1,93 @@
+.hero{
+    margin: 0;
+}
+ .hero_icon{
+    gap: 1.5rem;
+}
+ .hero_icon .icon{
+    color: var(--subtitle);
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .5s;
+}
+.hero_icon .icon:hover{
+    font-size: 1.5rem;
+    color: var(--iconhover);
+
+}
+.footer_list{
+    gap:1.7rem;
+}
+.footer_list li a{
+    text-decoration: none;
+    color: var(--title);
+    opacity: .9;
+    font-size: .88rem;
+    font-weight: 500;
+    transition: all .7s;
+
+}
+.footer_list li a:hover{
+    color: var(--hover);
+    opacity: 1;
+    transition: all .7s;
+
+ } 
+.footer_text .f_text{
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    color: var(--subtitle);
+    margin: 0;
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1023) {
+    /* For tablit: */
+    .footer_text{
+        text-align: center;
+    }
+    .footer_text p{
+        margin-top: 1rem;
+        font-size: 1.5rem !important;
+        font-weight: 600;
+    }
+    .footer_list{
+        gap:1.3rem;
+    }
+    .footer_list li a{
+        opacity: .9;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: all .7s;
+    
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .footer_hero .hero_icon{
+        justify-content: center;
+        margin-bottom: 1rem !important;
+    }
+    .footer_text{
+        text-align: center;
+    }
+    .footer_text p{
+        margin-top: 1rem;
+        font-size: 1.5rem !important;
+        font-weight: 600;
+    }
+    .footer_list{
+        gap:.8rem;
+        margin-top: .2rem;
+        justify-content: center;
+    }
+    .footer_list li a{
+        opacity: .9;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: all .7s;
+    
+    }
+  }

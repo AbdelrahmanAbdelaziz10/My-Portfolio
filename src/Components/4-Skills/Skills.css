@@ -1,0 +1,38 @@
+.skills h2{
+    color: var(--title);
+    font-weight: 500;
+    font-size: 2.7rem;
+    position: relative;
+}
+.skills h2::after{
+    content: '';
+    position: absolute;
+    margin: -2% 0;
+    height: 3px;
+    width: 18%;
+    bottom: 0;
+    left: 47%;
+    background-color: var(--hover);
+
+}
+.skills h4{
+    color: var(--title);
+}
+.skill_icon{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: var(--hover);
+}
+
+@media only screen and (max-width: 767px) {
+    .skills h2::after{
+        content: '';
+        position: absolute;
+        margin: -2% 0;
+        height: 3px;
+        width: 33%;
+        bottom: 0;
+        left: 23%;
+    
+    }     
+}

@@ -1,0 +1,118 @@
+main h2 {
+    color: var(--title);
+    font-weight: 500;
+    font-size: 2.7rem;
+    position: relative;
+}
+
+main h2::after {
+    content: '';
+    position: absolute;
+    margin: -2% 0;
+    height: 3px;
+    width: 23%;
+    bottom: 0;
+    left: 45%;
+    background-color: var(--hover);
+
+}
+
+.left_section {
+    flex-direction: column;
+}
+
+.left_section button {
+    text-align: center;
+    margin-bottom: 7%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    background-color: rgb(36, 37, 46, 1);
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px var(--hover);
+    transition: all .3s;
+    opacity: 0.7;
+}
+
+.left_section button:hover, .left_section button.active {
+    border: 1px solid var(--hover);
+    background-color: var(--hover);
+    color: var(--title);
+    transition: all .7s;
+    opacity: 1;
+
+}
+
+.left_section button.active {
+    letter-spacing: 0.6px;
+}
+
+.light .left_section button.active {
+    background-color: rgba(36, 37, 46, 1);
+}
+
+.light .left_section button:hover, .light .left_section button.active {
+    background-color: rgba(36, 37, 46, 1);
+    color: #fff;
+}
+
+.card {
+    background-color: var(--border) !important;
+    margin-right: 2% !important;
+    transition: all 0.5s;
+    box-shadow: 2px 2px 3px var(--hover) !important;
+
+}
+
+.card:hover {
+    box-shadow: 2px 2px 7px var(--hover) !important;
+    border: 2px solid var(--hover);
+    rotate: 1deg;
+    scale: 1.03;
+    cursor: pointer;
+}
+
+.card h5 {
+    color: var(--title);
+}
+
+.card p {
+    color: var(--subtitle);
+    letter-spacing: normal;
+}
+
+.card .card_icon {
+    padding-right: 8%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--iconhover);
+    transition: all .5s;
+}
+
+.card .card_icon:hover {
+    font-size: 1.4rem;
+    color: var(--hover);
+}
+
+.right_section .projects {
+    padding: 0 0.3rem !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .left_section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .left_section button {
+        font-size: .6rem;
+        padding: 8px 10px;
+    }
+
+    .card {
+        margin: 0 6% !important;
+
+    }
+}
