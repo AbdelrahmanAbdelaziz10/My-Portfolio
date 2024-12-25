@@ -166,7 +166,7 @@ const myProject = [
     demoPath: "https://knock-omega.vercel.app/",
   },
 ];
-
+// start function of project
 export const Project = () => {
   const [currantactive, setCurrentactive] = useState("all");
   const [project, setProject] = useState(myProject);
