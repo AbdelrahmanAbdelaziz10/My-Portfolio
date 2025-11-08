@@ -16,6 +16,7 @@ function App() {
   return (
     <div id="up" className="App ">
       <Home />
+      {/*comeeeeent */}
       <a href="#up" 
       style={{ transition: ".6s", opacity: scrollbtn ? 1 : 0 }}>
         <button className="scroll_btn">
