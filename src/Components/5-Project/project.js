@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./project.css";
 import { Col, Row } from "react-bootstrap";
-import cardimg from "../../Images/download.jpeg";
 import { FaLink } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";

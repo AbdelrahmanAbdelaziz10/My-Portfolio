@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { IoMdSunny } from "react-icons/io";
-import { IoMdMoon } from "react-icons/io";
 
 export const Header = () => {
   const [show, setShow] = useState(false);

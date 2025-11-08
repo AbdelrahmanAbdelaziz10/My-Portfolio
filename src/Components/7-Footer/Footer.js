@@ -1,7 +1,6 @@
 import React from 'react'
 import './footer.css';
 import { Row, Col } from 'react-bootstrap';
-import { SiGmail } from "react-icons/si";
 import { FaGithub ,FaLinkedin, FaFacebookSquare} from "react-icons/fa";
 
 export const Footer = () => {
