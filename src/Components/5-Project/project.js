@@ -259,6 +259,7 @@ export const Project = () => {
                             href={item.demoPath}
                             target="_blank"
                             className="card_icon"
+                             rel="noreferrer"
                           >
                             <FaLink />
                           </a>
@@ -267,6 +268,7 @@ export const Project = () => {
                               href={item.CodePath}
                               target="_blank"
                               className="card_icon"
+                               rel="noreferrer"
                             >
                               <FaGithub />
                             </a>

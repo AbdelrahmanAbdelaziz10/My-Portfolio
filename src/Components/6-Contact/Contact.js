@@ -142,18 +142,21 @@ export const Contact = () => {
                     <a
                       href="https://www.facebook.com/profile.php?id=100004103023482"
                       target="_blank"
+                       rel="noreferrer"
                     >
                       <FaFacebookSquare className="icon " />
                     </a>
                     <a
                       href="https://github.com/AbdelrahmanAbdelaziz10?tab=repositories"
                       target="_blank"
+                       rel="noreferrer"
                     >
                       <FaGithub className="icon" />
                     </a>
                     <a
                       href="https://www.linkedin.com/in/abdelrahman-abdelaziz-533296189/"
                       target="_blank"
+                       rel="noreferrer"
                     >
                       <FaLinkedin className="icon" />
                     </a>
